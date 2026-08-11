@@ -10,7 +10,7 @@ const shop=new THREE.Group();scene.add(shop);function mesh(g,m,p=[0,0,0],name=''
 // small room shell
 box([9,.15,8],M.floor,[0,0,-1.2],'floor');box([9,4.2,.15],M.wall,[0,2.1,-5.15],'back wall');box([.15,4.2,8],M.wall2,[-4.5,2.1,-1.2],'left wall');box([.15,4.2,8],M.wall2,[4.5,2.1,-1.2],'right wall');box([9,.12,8],M.wall2,[0,4.2,-1.2],'ceiling');
 // station and framed mirror
-box([3.9,.18,.8],M.wood,[0,1.02,-4.35],'counter');box([4.1,.12,.88],M.trim,[0,1.15,-4.35],'countertop');box([.18,1.45,.65],M.wood,[-1.65,.38,-4.35],'storage');box([.18,1.45,.65],M.wood,[1.65,.38,-4.35],'storage');
+box([3.9,.18,.8],M.wood,[0,1.02,-4.35],'counter');box([4.1,.12,.88],M.trim,[0,1.15,-4.35],'countertop');box([.18,1.1,.65],M.wood,[-1.65,.55,-4.35],'storage');box([.18,1.1,.65],M.wood,[1.65,.55,-4.35],'storage');
 box([3.65,2.35,.14],M.trim,[0,2.65,-4.45],'mirror frame');box([3.3,2,.04],M.glass,[0,2.65,-4.54],'mirror');
 for(const x of [-1.48,-.74,0,.74,1.48]){const l=mesh(new THREE.CylinderGeometry(.09,.09,.38,10),M.gold,[x,2.65,-4.66],'mirror bulb');l.rotation.x=Math.PI/2}
 // chair: back, seat, arms, headrest, pedestal, footrest
